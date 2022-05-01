@@ -2,9 +2,11 @@ import React from 'react'
 
 const Display = () => {
   return (
-    <div>
+    <div style={{
+        flex: 1
+    }} id='display'>
         <button>Power up</button>
-        <div><p>Description</p></div>
+        <div style={{backgroundColor: 'gray', width: 150}}><p>Description</p></div>
         <button>Bank</button>
     </div>
   )
