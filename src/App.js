@@ -1,5 +1,5 @@
 import React from 'react'
-import DrumMachineBox from './DrumMachineBox'
+import DrumMachineBox from './components/DrumMachineBox'
 
 const App = () => {
   return (
