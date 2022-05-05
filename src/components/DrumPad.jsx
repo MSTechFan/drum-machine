@@ -1,12 +1,12 @@
 import React from 'react'
 
-const DrumPad = ( {drumTile, play} ) => {
-  console.log(play)
+const DrumPad = ( props ) => {
+  console.log(props)
   return (
     <div style={{
         flex: 1
     }}>
-        <button onClick={() => play.play()} className='drum-pad' id='letterQ'>Q</button>
+        <button onClick={() => props.audioElement.play()} className='drum-pad' id='letterQ'>Q</button>
         <button className='drum-pad' id='letterE'>E</button>
         <button className='drum-pad' id='letterW'>W</button>
         <button className='drum-pad' id='letterA'>A</button>

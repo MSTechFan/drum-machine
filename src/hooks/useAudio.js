@@ -1,6 +1,8 @@
+import srcPrueba from '../prueba.mp3'
+
 const audio = document.createElement('audio')
-audio.src = ''
+audio.src = srcPrueba
 
 export default function useAudio () {
-    console.log('estoy sonando')
+    return audio
 }
