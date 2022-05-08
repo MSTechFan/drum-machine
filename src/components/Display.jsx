@@ -1,13 +1,17 @@
 import React from 'react'
+import { DisplayBtn, DescriptionBox } from './Btn'
 
 const Display = () => {
   return (
     <div style={{
-        flex: 1
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        flex: 1,
     }} id='display'>
-        <button>Power up</button>
-        <div style={{backgroundColor: 'gray', width: 150}}><p>Description</p></div>
-        <button>Bank</button>
+        <DisplayBtn>POWER UP</DisplayBtn>
+        <DescriptionBox>Description</DescriptionBox>
+        <DisplayBtn>BANK</DisplayBtn>
     </div>
   )
 }
