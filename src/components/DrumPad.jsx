@@ -2,8 +2,10 @@ import React from 'react'
 import {Btn} from './Btn'
 import useAudio from '../hooks/useAudio'
 
-const handleAudio = () => {
-
+let audioBtn = ''
+const handleAudio = (src) => {
+  audioBtn = useAudio(src)
+  audioBtn.play()
 }
 
 const DrumPad = ( props ) => {
@@ -13,7 +15,7 @@ const DrumPad = ( props ) => {
         flexWrap: 'wrap',
         flex: 1,
     }}>
-        <Btn>Q</Btn>
+        <Btn onClick={() => handleAudio('guitarChord')}>Q</Btn>
         <Btn>E</Btn>
         <Btn>W</Btn>
         <Btn>A</Btn>

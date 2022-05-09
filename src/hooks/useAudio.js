@@ -12,6 +12,37 @@ import guitarToy from '../assets/audio/guitar-toy.wav'
 const audio = document.createElement('audio')
 
 export default function useAudio (url) {
-    audio.src = url
+    switch (url) {
+        case 'guitarChord':
+            audio.src = guitarChord
+            break;
+        case 'guitarCool':
+            audio.src = guitarCool
+            break;
+        case 'guitarElectrial':
+            audio.src = guitarElectrial
+            break;
+        case 'guitarNotification':
+            audio.src = guitarNotification
+            break;    
+        case 'guitarQuick':
+            audio.src = guitarQuick
+            break;
+        case 'guitarRiff':
+            audio.src = guitarRiff
+            break;
+        case 'guitarStroke':
+            audio.src = guitarStroke
+            break;
+        case 'guitarStrum':
+            audio.src = guitarStrum
+            break;
+        case 'guitarToy':
+            audio.src = guitarToy
+            break;
+    
+        default:
+            break;
+    }
     return audio
 }
