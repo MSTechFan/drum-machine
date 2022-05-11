@@ -19,14 +19,14 @@ const DisplayBtn = Styled.button `
     width: 120px;
     height: 30px;
     margin: 15px 0;
-    background-color: green;
+    background-color: ${props => props.boxColor};
     border-radius: 5px;
     border: 2px solid black;  
     color: white;
     cursor: pointer;
-    :hover {
-        background-color: red;
-    }
+    /* :hover {
+        background-color: #00C897;
+    } */
     
 `
 
@@ -40,5 +40,7 @@ const DescriptionBox = Styled.div `
     text-align: center;
 
 `
+
+
 
 export {Btn, DisplayBtn, DescriptionBox}
