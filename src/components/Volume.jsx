@@ -9,11 +9,28 @@ const Volume = () => {
   const barHoverBox = useRef()
   const fill = useRef()
 
-  
+  const calculateFill = (event) => {
+    let offsetX = event.offsetX
+
+    if(event.type === "touchmove"){
+      offsetX = event.touches[0].pageX - event.touches[0].target.offsetLeft
+    }
+    const width = event.target.offsetWidth - 30
+
+    handleRangeChange(
+      Math.max(
+        Math.min(
+          (offsetX - 15) / width * 100.0,
+          100.0
+        )
+      )
+    )
+  }
 
   useEffect(() => {
     const handleRangeChange = (value) => {
       fill.style.width = value + "%"
+      setRange(value)
     }
   }, [range])
 
