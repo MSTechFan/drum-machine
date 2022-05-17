@@ -1,6 +1,7 @@
 import {React} from 'react'
 import { DisplayBtn, DescriptionBox } from './Btn'
-import VolumeBar from './Volume'
+import Volume from './Volume'
+import Bank from './Bank.jsx'
 
 
 
@@ -22,7 +23,8 @@ const Display = ( props ) => {
     }} id='display'>
         <DisplayBtn onClick={() => handlePower()} boxColor={props.power ? "green": "red"}>{props.power ? "ON": "OFF"}</DisplayBtn>
         <DescriptionBox>{props.power ? props.audioBtn : "" }</DescriptionBox>        
-        <VolumeBar/>
+        <Volume volume={props.volume} setVolume={props.setVolume} setMuted={props.setMuted} muted={props.muted}/>
+        <Bank/>
     </div>
   )
 }
