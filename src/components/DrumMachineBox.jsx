@@ -9,6 +9,8 @@ const DrumMachineBox = () => {
   const [power, setPower] = useState(true)
   const [volume, setVolume] = useState(0.5)
   const [muted, setMuted] = useState(false)
+  const [switchBank,setSwitchBank] = useState(true)
+  
 
   const muteMe = (elem, value=true) => {
     elem.muted = value
@@ -23,8 +25,9 @@ const DrumMachineBox = () => {
 
   return (
     <div style={{display: 'flex', flexDirection: 'row', width: 600, height: 350, outline: '5px solid green', padding: 10, alignItems: 'center', justifyContent: 'center'}} id='drum-machine'>
-      <DrumPad setAudioBtn={setAudioBtn}/>
-      <Display audioBtn={audioBtn} power={power} setPower={setPower} setAudioBtn={setAudioBtn} volume={volume} setVolume={setVolume} setMuted={setMuted} muted={muted}/>
+      <DrumPad setAudioBtn={setAudioBtn} switchBank={switchBank}/>
+      <Display audioBtn={audioBtn} power={power} setPower={setPower} setAudioBtn={setAudioBtn} volume={volume} setVolume={setVolume} setMuted={setMuted} muted={muted} setSwitchBank={setSwitchBank} switchBank={switchBank}/>
+      
       {
         power === false ? document.querySelectorAll("audio").forEach(elem => muteMe(elem)) : document.querySelectorAll("audio").forEach(elem => muteMe(elem, false))
       }

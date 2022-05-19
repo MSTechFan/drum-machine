@@ -7,8 +7,6 @@ import {Bank, BankInside} from './Bank'
 
 const Display = ( props ) => {
 
-  const [switchBank,setSwitchBank] = useState(true)
-
   const handlePower = () => {
     props.power ? props.setPower(false) : (
       props.setAudioBtn(""),
@@ -27,7 +25,7 @@ const Display = ( props ) => {
         <DescriptionBox>{props.power ? props.audioBtn : "" }</DescriptionBox>        
         <Volume volume={props.volume} setVolume={props.setVolume} setMuted={props.setMuted} muted={props.muted}/>
         <p>BANK</p>
-        <Bank onClick={() => setSwitchBank(!switchBank)} switch={switchBank ? "flex-start": "flex-end"}>
+        <Bank onClick={() => props.setSwitchBank(!props.switchBank)} switch={props.switchBank ? "flex-start": "flex-end"}>
           <BankInside></BankInside>
         </Bank>
     </div>
