@@ -13,6 +13,12 @@ const Display = ( props ) => {
       props.setPower(true)
       )
   }
+
+  const handleBankButton = () =>{
+    if(props.power === true){
+      props.setSwitchBank(!props.switchBank)
+    }
+  }
   
   return (
     <div style={{
@@ -23,9 +29,9 @@ const Display = ( props ) => {
     }} id='display'>
         <DisplayBtn onClick={() => handlePower()} boxColor={props.power ? "green": "red"}>{props.power ? "ON": "OFF"}</DisplayBtn>
         <DescriptionBox>{props.power ? props.audioBtn : "" }</DescriptionBox>        
-        <Volume volume={props.volume} setVolume={props.setVolume} setMuted={props.setMuted} muted={props.muted}/>
+        <Volume volume={props.volume} setVolume={props.setVolume} setMuted={props.setMuted} muted={props.muted} power={props.power}/>
         <p>BANK</p>
-        <Bank onClick={() => props.setSwitchBank(!props.switchBank)} switch={props.switchBank ? "flex-start": "flex-end"}>
+        <Bank onClick={() => handleBankButton()} switch={props.switchBank ? "flex-start": "flex-end"}>
           <BankInside></BankInside>
         </Bank>
     </div>
