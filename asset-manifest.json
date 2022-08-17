@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/drum-machine/static/css/main.4cdcb74f.css",
+    "main.js": "/drum-machine/static/js/main.6d0f1463.js",
+    "static/media/guitar-toy.wav": "/drum-machine/static/media/guitar-toy.abd04f1c9ed3a8f51163.wav",
+    "static/media/guitar-stroke.wav": "/drum-machine/static/media/guitar-stroke.08b893d4dc397ffa0c8b.wav",
+    "static/media/piano-game-over.wav": "/drum-machine/static/media/piano-game-over.492ea39fc7b5a9d83398.wav",
+    "static/media/guitar-electrical.wav": "/drum-machine/static/media/guitar-electrical.5f68e84abd02d6944d1b.wav",
+    "static/media/piano-dog.wav": "/drum-machine/static/media/piano-dog.08f49e2aedf91f8a6ae1.wav",
+    "static/media/guitar-notification.wav": "/drum-machine/static/media/guitar-notification.81f8c8d5a776053dc0e4.wav",
+    "static/media/guitar-strum.wav": "/drum-machine/static/media/guitar-strum.05692099d350591414ce.wav",
+    "static/media/guitar-cool.wav": "/drum-machine/static/media/guitar-cool.0c64de49cdab8b2b9613.wav",
+    "static/media/piano-retro-not.wav": "/drum-machine/static/media/piano-retro-not.b222ebf03a29c11b61f0.wav",
+    "static/media/piano-roar.wav": "/drum-machine/static/media/piano-roar.75960ab022338c0638e3.wav",
+    "static/media/guitar-riff.wav": "/drum-machine/static/media/guitar-riff.eedae018368bbe0b91c4.wav",
+    "static/media/guitar-quick.wav": "/drum-machine/static/media/guitar-quick.b837981d5cfc94d87fb0.wav",
+    "static/media/piano-wild-lion.wav": "/drum-machine/static/media/piano-wild-lion.041929ce46bfd9f2f83e.wav",
+    "static/media/guitar-chords.wav": "/drum-machine/static/media/guitar-chords.650939ee1d653e6f3454.wav",
+    "static/media/piano-alarm-tone.wav": "/drum-machine/static/media/piano-alarm-tone.6b43ba3c258a24b23783.wav",
+    "static/media/piano-sweep.wav": "/drum-machine/static/media/piano-sweep.ee99c7aed16b4017abc4.wav",
+    "static/media/piano-little-bird.wav": "/drum-machine/static/media/piano-little-bird.b63e0789d21b5f6ec07f.wav",
+    "static/media/piano-bird-tropical.wav": "/drum-machine/static/media/piano-bird-tropical.58c26d6296a076bcc6f8.wav",
+    "index.html": "/drum-machine/index.html",
+    "main.4cdcb74f.css.map": "/drum-machine/static/css/main.4cdcb74f.css.map",
+    "main.6d0f1463.js.map": "/drum-machine/static/js/main.6d0f1463.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4cdcb74f.css",
+    "static/js/main.6d0f1463.js"
+  ]
+}
